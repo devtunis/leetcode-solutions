@@ -22,7 +22,7 @@ end = {"x":0,"y":0}
 
 def intialize():
     map[start["x"]][start["y"]] = "*"
-    map[end["x"]][end["y"]] = "F"
+    map[end["x"]][end["y"]] = "$"
 
 intialize()
 
