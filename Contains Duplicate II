@@ -1,0 +1,24 @@
+from math import*
+class Solution(object):
+    def containsNearbyDuplicate(self, nums, k):
+    
+        
+ 
+        
+        seen  = {}
+     
+        
+        for index   in range(len(nums)) :
+        
+        
+            
+            if  nums[index] in seen:
+
+                if (abs(index- seen[nums[index]]))<=k:
+                    return True
+            
+                
+            seen[nums[index]] = index
+
+        return False
+        
